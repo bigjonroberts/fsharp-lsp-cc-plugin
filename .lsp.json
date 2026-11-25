@@ -1,0 +1,37 @@
+{
+  "fsautocomplete": {
+    "command": "fsautocomplete",
+    "extensionToLanguage": {
+      ".fs": "fsharp",
+      ".fsx": "fsharp",
+      ".fsi": "fsharp"
+    },
+    "transport": "stdio",
+    "initializationOptions": {
+      "AutomaticWorkspaceInit": true
+    },
+    "settings": {
+      "FSharp": {
+        "KeywordsAutocomplete": true,
+        "ExternalAutocomplete": false,
+        "Linter": true,
+        "UnionCaseStubGeneration": true,
+        "UnionCaseStubGenerationBody": "failwith \"Not Implemented\"",
+        "RecordStubGeneration": true,
+        "RecordStubGenerationBody": "failwith \"Not Implemented\"",
+        "InterfaceStubGeneration": true,
+        "InterfaceStubGenerationObjectIdentifier": "this",
+        "InterfaceStubGenerationMethodBody": "failwith \"Not Implemented\"",
+        "UnusedOpensAnalyzer": true,
+        "UnusedDeclarationsAnalyzer": true,
+        "SimplifyNameAnalyzer": true,
+        "ResolveNamespaces": true,
+        "EnableReferenceCodeLens": true,
+        "UseSdkScripts": true
+      }
+    },
+    "startupTimeout": 60000,
+    "restartOnCrash": true,
+    "maxRestarts": 5
+  }
+}

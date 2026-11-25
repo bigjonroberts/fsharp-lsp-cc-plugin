@@ -1,0 +1,12 @@
+{
+  "name": "fsharp-lsp",
+  "version": "0.1.0",
+  "description": "F# language intelligence via FsAutoComplete — diagnostics, completions, go-to-definition, find references, and more for .fs/.fsx/.fsi files.",
+  "author": {
+    "name": "Jon Roberts",
+    "url": "https://github.com/bigjonroberts"
+  },
+  "repository": "https://github.com/bigjonroberts/fsharp-lsp-cc-plugin",
+  "keywords": ["fsharp", "f#", "dotnet", "lsp", "fsautocomplete"],
+  "lspServers": "./.lsp.json"
+}

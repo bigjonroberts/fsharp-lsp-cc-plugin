@@ -1,0 +1,16 @@
+{
+  "name": "fsharp-lsp",
+  "metadata": {
+    "description": "F# language support for Claude Code via FsAutoComplete"
+  },
+  "owner": {
+    "name": "Jon Roberts"
+  },
+  "plugins": [
+    {
+      "name": "fsharp-lsp",
+      "source": "./",
+      "description": "F# language intelligence via FsAutoComplete — diagnostics, completions, go-to-definition, find references, and more for .fs/.fsx/.fsi files."
+    }
+  ]
+}
