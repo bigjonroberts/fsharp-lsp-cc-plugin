@@ -1,6 +1,6 @@
 {
-  "name": "fsharp-lsp",
-  "version": "0.1.0",
+  "name": "fsharp-fsac",
+  "version": "0.2.0",
   "description": "F# language intelligence via FsAutoComplete \u2014 diagnostics, completions, go-to-definition, find references, and more for .fs/.fsx/.fsi files.",
   "author": {
     "name": "Jon Roberts",
@@ -16,5 +16,6 @@
     "lsp",
     "fsautocomplete"
   ],
-  "lspServers": "./.lsp.json"
+  "lspServers": "./.lsp.json",
+  "displayName": "F# (FsAutoComplete)"
 }

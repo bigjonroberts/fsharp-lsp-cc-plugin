@@ -1,6 +1,9 @@
 {
   "fsautocomplete": {
-    "command": "fsautocomplete",
+    "command": "node",
+    "args": [
+      "${CLAUDE_PLUGIN_ROOT}/bin/launch-fsautocomplete.js"
+    ],
     "extensionToLanguage": {
       ".fs": "fsharp",
       ".fsx": "fsharp",

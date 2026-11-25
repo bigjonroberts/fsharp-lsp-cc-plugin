@@ -6,6 +6,7 @@ A Claude Code plugin that provides F# language intelligence via
 ## Prerequisites
 
 - [.NET SDK](https://dotnet.microsoft.com/download) (6.0 or later)
+- [Node.js](https://nodejs.org/) (used to start the language server)
 - FsAutoComplete installed as a global tool:
 
   ```bash
@@ -24,14 +25,14 @@ From within Claude Code, add this repo as a marketplace and install the plugin:
 
 ```
 /plugin marketplace add bigjonroberts/fsharp-lsp-cc-plugin
-/plugin install fsharp-lsp@fsharp-lsp
+/plugin install fsharp-fsac@fsharp-fsac
 ```
 
 Or from the shell:
 
 ```bash
 claude plugin marketplace add bigjonroberts/fsharp-lsp-cc-plugin
-claude plugin install fsharp-lsp@fsharp-lsp
+claude plugin install fsharp-fsac@fsharp-fsac
 ```
 
 For local development/testing:
@@ -57,9 +58,9 @@ Language intelligence for `.fs`, `.fsx`, and `.fsi` files:
 
 ## What This Plugin Runs
 
-The plugin contains no code of its own. It tells Claude Code to launch the
-`fsautocomplete` executable from your `PATH` over stdio when you work with F#
-files. It makes no network requests and sends no data anywhere; FsAutoComplete
+The plugin's only code is `bin/launch-fsautocomplete.js`, a small Node script
+that Claude Code runs when you work with F# files. It starts the
+`fsautocomplete` executable from your `PATH` and connects it over stdio. It makes no network requests and sends no data anywhere; FsAutoComplete
 itself may restore NuGet packages or invoke `dotnet`/MSBuild as part of
 loading your projects.
 
@@ -102,4 +103,6 @@ This plugin was created with the help of [Claude Code](https://claude.com/claude
 
 ## License
 
-MIT
+MIT. The plugin icon is the F# logo from the
+[F# Software Foundation](https://github.com/fsharp/fsfoundation), used under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
