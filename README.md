@@ -55,6 +55,14 @@ Language intelligence for `.fs`, `.fsx`, and `.fsi` files:
 - **Document Symbols** — Outline view of the current file
 - **Formatting** — Code formatting via Fantomas
 
+## What This Plugin Runs
+
+The plugin contains no code of its own. It tells Claude Code to launch the
+`fsautocomplete` executable from your `PATH` over stdio when you work with F#
+files. It makes no network requests and sends no data anywhere; FsAutoComplete
+itself may restore NuGet packages or invoke `dotnet`/MSBuild as part of
+loading your projects.
+
 ## Configuration
 
 The plugin ships with `AutomaticWorkspaceInit: true`, so FSAC will
